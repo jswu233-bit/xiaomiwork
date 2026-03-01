@@ -11,10 +11,14 @@
             "id": "83df11f9727278bd",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "01. 小米/业务记录/门店损益表结构.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "门店损益表结构"
             }
           }
         ]
@@ -204,12 +208,12 @@
   },
   "active": "83df11f9727278bd",
   "lastOpenFiles": [
+    "01. 小米/业务记录/渠道零售.md",
+    "01. 小米/业务记录/OC关于套装和赠品的结构.md",
+    "01. 小米/业务记录/PAYID.md",
     "欢迎.md",
     "图片/img_v3_02to_413108bd-7d50-4607-81ee-686fb331edfg.jpg",
     "图片/img_v3_02sk_c236d9c4-53fd-4808-b36d-71098225869g.jpg",
-    "01. 小米/业务记录/PAYID.md",
-    "01. 小米/业务记录/OC关于套装和赠品的结构.md",
-    "01. 小米/业务记录/渠道零售.md",
     "01. 小米/业务记录/门店损益表结构.md",
     "01. 小米/业务记录",
     "图片",
