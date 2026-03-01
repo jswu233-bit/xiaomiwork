@@ -174,19 +174,9 @@
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
             }
-          },
-          {
-            "id": "9a24c91c5f03e9cb",
-            "type": "leaf",
-            "state": {
-              "type": "claudian-view",
-              "state": {},
-              "icon": "bot",
-              "title": "Claudian"
-            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -206,7 +196,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "161b484e7cd6b21b",
+  "active": "b1fb813dc16f0274",
   "lastOpenFiles": [
     "xiaomi/record/门店损益表结构.md",
     "idea/AI记录.md",
