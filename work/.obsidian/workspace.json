@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "未命名.md",
+                "file": "VB for prototype.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "未命名"
+              "title": "VB for prototype"
             }
           }
         ],
@@ -228,7 +228,7 @@
   "active": "7dd6a2d88812d2ad",
   "lastOpenFiles": [
     "idea/memo.md",
-    "未命名.md",
+    "VB for prototype.md",
     "idea/AI记录.md",
     "xiaomi/record/门店损益表结构.md",
     "xiaomi/record/渠道零售.md",
