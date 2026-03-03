@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -225,10 +225,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7dd6a2d88812d2ad",
+  "active": "79558697371d63d3",
   "lastOpenFiles": [
-    "idea/memo.md",
     "VB for prototype.md",
+    "idea/memo.md",
     "idea/AI记录.md",
     "xiaomi/record/门店损益表结构.md",
     "xiaomi/record/渠道零售.md",
