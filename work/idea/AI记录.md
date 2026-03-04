@@ -16,7 +16,18 @@ aigocode
             "maxTokens": 16384
 ```
 
-
+```js
+{
+  "provider": "anthropic",
+  "base_url": "https://api.aigocode.com/",
+  "api": "anthropic-messages",
+  "api_key": "sk-87a9e922072e5a18edfc743e8ec025d14ab35b60e520c68fab7b1abc48b2a277",
+  "model": {
+    "id": "claude-opus-4-6",
+    "name": "Claude Opus 4.6(aigocode)"
+  }
+}
+```
 
 1. ### 
     

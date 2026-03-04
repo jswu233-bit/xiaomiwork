@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "idea/龙虾记录.md",
+                "file": "idea/AI记录.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "龙虾记录"
+              "title": "AI记录"
             }
           }
         ]
@@ -190,7 +190,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 382.5
+    "width": 388.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -206,12 +206,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4c56e4708c910da0",
+  "active": "79558697371d63d3",
   "lastOpenFiles": [
-    "VB for prototype.md",
-    "idea/龙虾记录.md",
-    "未命名",
     "idea/memo.md",
+    "idea/龙虾记录.md",
+    "VB for prototype.md",
+    "未命名",
     "idea/AI记录.md",
     "xiaomi/record/门店损益表结构.md",
     "xiaomi/record/渠道零售.md",
