@@ -174,13 +174,23 @@
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
             }
+          },
+          {
+            "id": "4c56e4708c910da0",
+            "type": "leaf",
+            "state": {
+              "type": "claudian-view",
+              "state": {},
+              "icon": "bot",
+              "title": "Claudian"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 330.5
+    "width": 382.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -196,7 +206,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "79558697371d63d3",
+  "active": "4c56e4708c910da0",
   "lastOpenFiles": [
     "VB for prototype.md",
     "idea/龙虾记录.md",
