@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "idea/AI记录.md",
+                "file": "idea/memo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AI记录"
+              "title": "memo"
             }
           }
         ]
@@ -208,11 +208,11 @@
   },
   "active": "79558697371d63d3",
   "lastOpenFiles": [
+    "idea/AI记录.md",
     "idea/memo.md",
     "idea/龙虾记录.md",
     "VB for prototype.md",
     "未命名",
-    "idea/AI记录.md",
     "xiaomi/record/门店损益表结构.md",
     "xiaomi/record/渠道零售.md",
     "xiaomi/record/OC关于套装和赠品的结构.md",
