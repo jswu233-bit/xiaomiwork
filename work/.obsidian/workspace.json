@@ -15,9 +15,9 @@
               "state": {
                 "file": "预算管理流程.canvas",
                 "viewState": {
-                  "x": 667.4573920370327,
-                  "y": 942.8109049601928,
-                  "zoom": -0.6399392288524421
+                  "x": 550,
+                  "y": 830,
+                  "zoom": -1.5202233027560503
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -81,7 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 448.5
   },
   "right": {
     "id": "1b2c194ff77db8e0",
@@ -209,9 +209,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "263519a5153929ff",
+  "active": "4c56e4708c910da0",
   "lastOpenFiles": [
+    "预算管理详细流程.canvas.bak",
+    "预算管理详细流程.canvas",
     "预算管理流程.canvas",
+    "VB for prototype.md",
+    "预算管理详细流程.canvas.tmp.34180.1773061076427",
+    "预算管理详细流程.canvas.tmp.34180.1773061063677",
+    "预算管理详细流程.canvas.tmp.34180.1773061043836",
     "预算管理流程.canvas.tmp.34180.1773053786858",
     "预算管理流程.canvas.tmp.34180.1773053777385",
     "预算管理流程.canvas.tmp.34180.1773053758571",
@@ -219,7 +225,6 @@
     "idea/memo.md",
     "idea/AI记录.md",
     "idea/龙虾记录.md",
-    "VB for prototype.md",
     "未命名",
     "xiaomi/record/门店损益表结构.md",
     "xiaomi/record/渠道零售.md",
@@ -230,9 +235,6 @@
     "pic/img_v3_02sk_c236d9c4-53fd-4808-b36d-71098225869g.jpg",
     "xiaomi/record",
     "pic",
-    "xiaomi",
-    "idea",
-    "欢迎.md.tmp.20220.1771930520802",
     "未命名.canvas"
   ]
 }
