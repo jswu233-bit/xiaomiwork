@@ -1,0 +1,38 @@
+{
+	"nodes":[
+		{"id":"title","type":"text","text":"# 预算管理流程\n\n涉及系统：BPC、EMS、CRM、米家","x":20,"y":-200,"width":400,"height":120,"color":"6"},
+		{"id":"inject-title","type":"text","text":"## 1. 注入预算","x":20,"y":-40,"width":200,"height":60,"color":"1"},
+		{"id":"country-finance","type":"text","text":"**国家财经**\n发起预算注入","x":20,"y":60,"width":180,"height":100},
+		{"id":"hq-review","type":"text","text":"**总部复核**","x":240,"y":60,"width":160,"height":100},
+		{"id":"bpc-budget","type":"text","text":"**BPC 编制预算**\n总部渠道财经","x":440,"y":60,"width":180,"height":100},
+		{"id":"ems-sync","type":"text","text":"**EMS 系统**\n接收 BPC 同步","x":440,"y":200,"width":180,"height":100},
+		{"id":"occupy-title","type":"text","text":"## 2. 占用预算","x":20,"y":380,"width":200,"height":60,"color":"2"},
+		{"id":"occupy-route1","type":"text","text":"**链路1：米家授权店活动**\n\n米家授权店创建活动\n↓\n生成预算（1活动可能多条预算）\n↓\n对应EMS中一条政策\n↓\n占用小编制预算","x":20,"y":480,"width":280,"height":260,"color":"4"},
+		{"id":"occupy-route2","type":"text","text":"**链路2：米家返利激励**\n\n米家返利激励政策\n↓\n对应EMS中一条政策\n↓\n占用小编制预算","x":340,"y":480,"width":280,"height":200,"color":"4"},
+		{"id":"writeoff-title","type":"text","text":"## 4. 核销预算","x":20,"y":1140,"width":200,"height":60,"color":"1"},
+		{"id":"writeoff-process","type":"text","text":"**米家返利月结计算完成**\n\n发起每个政策的结算\n\n**情况1：消耗金额 < 结算金额**\n- 多出金额需重新预占\n- 直到政策有足够核销金额\n- 返回米家返利可发起结算\n\n**情况2：消耗金额 ≥ 结算金额**\n- 释放多余金额\n- 返回米家返利可发起结算","x":20,"y":1240,"width":400,"height":420,"color":"4"},
+		{"id":"ems-structure","type":"text","text":"### EMS 结构\n\n**大编制**（从BPC同步的一条编制）\n↓\n**小编制**（CRM占用/释放形成）\n- 小编制金额 ≤ 大编制金额\n- 米家本次可占用的预算总额\n↓\n**政策**（多条）\n- 一条政策 = 一条米家促销活动/激励政策\n- 同品类预算\n- 跨品类活动会有多条预算","x":760,"y":360,"width":320,"height":420,"color":"3"},
+		{"id":"bpc-structure","type":"text","text":"### BPC 结构\n\n科目（固定）→ 渠道（米家授权店）→ 国家 → 4大品类\n\n**4大品类：**\n- 手机\n- 非手机-可穿戴充电\n- 非手机-电视&大家电\n- 非手机-生态链\n\n一个品类+国家+渠道+科目 = 一条编制","x":760,"y":-10,"width":320,"height":280,"color":"3"},
+		{"id":"crm-writeoff","type":"text","text":"**CRM 核销流程**\n\nCRM接收米家返利月结账单\n↓\n发起对商家的真实返利\n↓\n请求EMS核销接口\n↓\n核销预算","x":520,"y":1240,"width":280,"height":280,"color":"4"},
+		{"id":"release-title","type":"text","text":"## 3. 释放预算","x":20,"y":780,"width":200,"height":60,"color":"5"},
+		{"id":"release-route1","type":"text","text":"**链路1：米家授权店释放**\n\n**触发场景：**\n- 活动：审批不通过、活动过期、退款\n- 券：券过期、审批不通过、活动过期、退款\n\n↓\n请求返利计算接口\n↓\n确认可以返回\n↓\n释放到促销池","x":20,"y":880,"width":280,"height":240,"color":"4"},
+		{"id":"release-route2","type":"text","text":"**链路2：米家返利月结**\n\n米家返利激励政策月结\n↓\n计算本政策返利金额\n↓\n剩余金额触发释放","x":340,"y":880,"width":280,"height":240,"color":"4"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"country-finance","fromSide":"right","toNode":"hq-review","toSide":"left"},
+		{"id":"e2","fromNode":"hq-review","fromSide":"right","toNode":"bpc-budget","toSide":"left"},
+		{"id":"e3","fromNode":"bpc-budget","fromSide":"right","toNode":"bpc-structure","toSide":"left","label":"结构说明"},
+		{"id":"e4","fromNode":"bpc-budget","fromSide":"bottom","toNode":"ems-sync","toSide":"top","label":"同步"},
+		{"id":"e5","fromNode":"ems-sync","fromSide":"right","toNode":"ems-structure","toSide":"left","label":"结构说明"},
+		{"id":"e6","fromNode":"ems-sync","fromSide":"bottom","toNode":"occupy-route1","toSide":"top","label":"小编制"},
+		{"id":"e7","fromNode":"ems-sync","fromSide":"bottom","toNode":"occupy-route2","toSide":"top","label":"小编制"},
+		{"id":"e8","fromNode":"occupy-route1","fromSide":"bottom","toNode":"release-route1","toSide":"top"},
+		{"id":"e9","fromNode":"occupy-route2","fromSide":"bottom","toNode":"release-route2","toSide":"top"},
+		{"id":"e10","fromNode":"release-route2","fromSide":"bottom","toNode":"writeoff-process","toSide":"top"},
+		{"id":"e11","fromNode":"writeoff-process","fromSide":"right","toNode":"crm-writeoff","toSide":"left"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

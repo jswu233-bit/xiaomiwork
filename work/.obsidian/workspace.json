@@ -4,21 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "c5ca144e73004fd3",
+        "id": "e6a40b831ace86ab",
         "type": "tabs",
         "children": [
           {
-            "id": "79558697371d63d3",
+            "id": "263519a5153929ff",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "idea/memo.md",
-                "mode": "source",
-                "source": false
+                "file": "预算管理流程.canvas",
+                "viewState": {
+                  "x": 667.4573920370327,
+                  "y": 797.8923977248539,
+                  "zoom": -0.6399392288524421
+                }
               },
-              "icon": "lucide-file",
-              "title": "memo"
+              "icon": "lucide-layout-dashboard",
+              "title": "预算管理流程"
             }
           }
         ]
@@ -190,7 +193,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 433.5
+    "width": 700.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -206,10 +209,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "79558697371d63d3",
+  "active": "263519a5153929ff",
   "lastOpenFiles": [
-    "idea/AI记录.md",
+    "预算管理流程.canvas",
+    "预算管理流程.canvas.tmp.34180.1773053786858",
+    "预算管理流程.canvas.tmp.34180.1773053777385",
+    "预算管理流程.canvas.tmp.34180.1773053758571",
+    "预算管理流程.canvas.tmp.34180.1773053714024",
     "idea/memo.md",
+    "idea/AI记录.md",
     "idea/龙虾记录.md",
     "VB for prototype.md",
     "未命名",
@@ -225,9 +233,6 @@
     "xiaomi",
     "idea",
     "欢迎.md.tmp.20220.1771930520802",
-    "欢迎.md.tmp.11556.1771930064071",
-    "未命名.canvas",
-    "未命名.base",
-    "未命名 1.base"
+    "未命名.canvas"
   ]
 }

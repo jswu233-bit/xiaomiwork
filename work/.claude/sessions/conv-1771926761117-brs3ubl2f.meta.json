@@ -3,17 +3,17 @@
   "title": "Create Claude Agent Profile",
   "titleGenerationStatus": "success",
   "createdAt": 1771926761130,
-  "updatedAt": 1772710264971,
-  "lastResponseAt": 1772710264971,
+  "updatedAt": 1773053795399,
+  "lastResponseAt": 1773053795399,
   "sessionId": "de635b71-93f3-4494-af3e-e5a3a2dcf217",
   "sdkSessionId": "de635b71-93f3-4494-af3e-e5a3a2dcf217",
   "usage": {
-    "model": "sonnet",
-    "inputTokens": 0,
-    "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 0,
+    "model": "opus",
+    "inputTokens": 66,
+    "cacheCreationInputTokens": 3359,
+    "cacheReadInputTokens": 38744,
     "contextWindow": 200000,
-    "contextTokens": 0,
-    "percentage": 0
+    "contextTokens": 42169,
+    "percentage": 21
   }
 }
