@@ -1,275 +1,40 @@
 {
-  "nodes": [
-    {
-      "id": "title",
-      "type": "text",
-      "text": "# 预算管理详细流程\n\n涉及系统：BPC、EMS、CRM、米家\n涉及角色：国家财经、总部复核、总部渠道财经",
-      "x": 0,
-      "y": -300,
-      "width": 500,
-      "height": 150,
-      "color": "6"
-    },
-    {
-      "id": "section1-title",
-      "type": "text",
-      "text": "## 1. 预算注入",
-      "x": 0,
-      "y": -100,
-      "width": 250,
-      "height": 70,
-      "color": "1"
-    },
-    {
-      "id": "inject-flow",
-      "type": "text",
-      "text": "### 注入流程\n\n国家财经发起预算注入\n↓\n总部复核\n↓\n总部渠道财经在 BPC 编制预算\n↓\n同步到 EMS",
-      "x": 0,
-      "y": 0,
-      "width": 250,
-      "height": 220
-    },
-    {
-      "id": "bpc-structure",
-      "type": "text",
-      "text": "### BPC 预算结构\n\n**维度：**\n科目（固定）→ 渠道（米家授权店）→ 国家 → 4大品类\n\n**编制规则：**\n一个科目 + 一个渠道 + 一个国家 + 一个品类 = 一条编制\n\n**4大品类：**\n（此品类会对应米家的业务类目）\n- 手机\n- 非手机-可穿戴充电\n- 非手机-电视 & 大家电\n- 非手机-生态链",
-      "x": 300,
-      "y": 0,
-      "width": 380,
-      "height": 350,
-      "color": "3"
-    },
-    {
-      "id": "ems-structure",
-      "type": "text",
-      "text": "### EMS 预算结构\n\n**大编制：**\nBPC 同步过来的一条编制\n\n**小编制：**\n- 由 CRM 占用和释放形成\n- 金额约束：小编制金额 ≤ 大编制金额\n- 代表米家本次可占用的预算总额\n- 一个大编制下可能有多个 CRM 占用的小编制\n\n**政策：**\n- 一个小编制下有多条政策\n- 一条政策对应米家的一个促销活动或激励政策的同品类预算\n- 注意：一个活动如果跨品类，会产生多条预算",
-      "x": 730,
-      "y": 0,
-      "width": 400,
-      "height": 450,
-      "color": "3"
-    },
-    {
-      "id": "section2-title",
-      "type": "text",
-      "text": "## 2. 预算占用",
-      "x": 0,
-      "y": 500,
-      "width": 250,
-      "height": 70,
-      "color": "2"
-    },
-    {
-      "id": "occupy-route1",
-      "type": "text",
-      "text": "### 链路1：米家授权店活动\n\n**触发场景：**\n米家授权店创建活动\n\n**占用逻辑：**\n- 一个活动跨多个品类时，会生成多条预算\n- 每条预算对应 EMS 中小编制下的一条政策\n- 占用小编制的预算",
-      "x": 0,
-      "y": 600,
-      "width": 350,
-      "height": 280,
-      "color": "4"
-    },
-    {
-      "id": "occupy-route2",
-      "type": "text",
-      "text": "### 链路2：米家返利激励政策\n\n**触发场景：**\n米家返利政策创建\n\n**占用逻辑：**\n- 一个返利政策只会产生一条预算（待确认）\n- 每条返利激励政策对应 EMS 中小编制下的一条政策\n- 占用小编制的预算",
-      "x": 400,
-      "y": 600,
-      "width": 350,
-      "height": 280,
-      "color": "4"
-    },
-    {
-      "id": "occupy-strategy",
-      "type": "text",
-      "text": "### 多个小编制占用策略\n\n由于大编制下存在多个 CRM 占用的小编制，需按以下规则选择小编制进行占用：\n\n**1. 优先选择金额较小的小编制**\n\n**2. 判断是否可占用：**\n\n❌ **不占用：** 池子金额 < 占用金额 × 120%\n- 跳过当前小编制，选择更大金额的小编制\n\n✅ **可占用：** 池子金额 ≥ 占用金额 × 120%\n- 占用当前小编制\n\n**规则说明：**\n20% 的缓冲空间确保小编制有足够余量应对后续追加占用（20%的数额待确认）",
-      "x": 800,
-      "y": 500,
-      "width": 450,
-      "height": 480,
-      "color": "5"
-    },
-    {
-      "id": "section3-title",
-      "type": "text",
-      "text": "## 3. 预算释放",
-      "x": 0,
-      "y": 1040,
-      "width": 250,
-      "height": 70,
-      "color": "5"
-    },
-    {
-      "id": "release-route1",
-      "type": "text",
-      "text": "### 链路1：米家授权店释放场景\n\n**范围说明：**\n本场景讨论促销池与预算网关之间的释放预算，不涉及促销池内部释放\n\n**触发场景：**\n- 活动：审批不通过、活动过期、发生退款\n- 券：券过期、审批不通过、活动过期、发生退款\n\n**释放流程：**\n1. 促销系统请求返利计算接口\n2. 确认是否可以释放预算\n3. 确认后才能释放并返回",
-      "x": 0,
-      "y": 1140,
-      "width": 400,
-      "height": 380,
-      "color": "4"
-    },
-    {
-      "id": "release-route2",
-      "type": "text",
-      "text": "### 链路2：米家返利激励政策月结\n\n（待确认）\n\n**触发场景：**\n月结后确定实际返利金额\n\n**释放逻辑：**\n剩余金额触发释放",
-      "x": 450,
-      "y": 1140,
-      "width": 350,
-      "height": 280,
-      "color": "4"
-    },
-    {
-      "id": "section4-title",
-      "type": "text",
-      "text": "## 4. 预算核销",
-      "x": 0,
-      "y": 1580,
-      "width": 250,
-      "height": 70,
-      "color": "1"
-    },
-    {
-      "id": "writeoff-stage1",
-      "type": "text",
-      "text": "### 阶段1：结算前校验\n\n月结计算完成后，米家返利对每个政策发起结算，请求预算网关校验是否可结算",
-      "x": 0,
-      "y": 1680,
-      "width": 450,
-      "height": 150,
-      "color": "3"
-    },
-    {
-      "id": "writeoff-case1",
-      "type": "text",
-      "text": "**情况1：消耗金额 < 结算金额（预算不足）**\n\n需要追加预占多出的金额：\n\n**小编制有足够金额可预占：**\n1. 先预占小编制中的预算\n2. 预占成功后 → 返回米家返利『可发起结算』\n3. 米家返利传给 CRM 月结账单\n\n**小编制无足够金额可预占：**\n1. 直接返回米家返利『不可发起结算』\n2. 米家返利需告知用户在 CRM 哪条政策里增加预算（此流程是线下流程）",
-      "x": 0,
-      "y": 1870,
-      "width": 450,
-      "height": 380,
-      "color": "4"
-    },
-    {
-      "id": "writeoff-case2",
-      "type": "text",
-      "text": "**情况2：消耗金额 ≥ 结算金额（预算有余）**\n\n1. 释放多余的金额（待确认）\n2. 返回米家返利『可发起结算』",
-      "x": 500,
-      "y": 1870,
-      "width": 400,
-      "height": 200,
-      "color": "4"
-    },
-    {
-      "id": "writeoff-stage2",
-      "type": "text",
-      "text": "### 阶段2：CRM 接收月结账单后\n\n执行以下操作：\n\n1. 发起对商家的真实返利\n2. 同时请求 EMS 核销接口核销预算",
-      "x": 0,
-      "y": 2300,
-      "width": 450,
-      "height": 200,
-      "color": "3"
-    }
-  ],
-  "edges": [
-    {
-      "id": "e1",
-      "fromNode": "inject-flow",
-      "toNode": "bpc-structure",
-      "fromSide": "right",
-      "toSide": "left",
-      "label": "BPC编制"
-    },
-    {
-      "id": "e2",
-      "fromNode": "bpc-structure",
-      "toNode": "ems-structure",
-      "fromSide": "right",
-      "toSide": "left",
-      "label": "同步到EMS"
-    },
-    {
-      "id": "e3",
-      "fromNode": "ems-structure",
-      "toNode": "occupy-route1",
-      "fromSide": "bottom",
-      "toSide": "top",
-      "label": "小编制"
-    },
-    {
-      "id": "e4",
-      "fromNode": "ems-structure",
-      "toNode": "occupy-route2",
-      "fromSide": "bottom",
-      "toSide": "top",
-      "label": "小编制"
-    },
-    {
-      "id": "e5",
-      "fromNode": "occupy-route1",
-      "toNode": "occupy-strategy",
-      "fromSide": "right",
-      "toSide": "left",
-      "label": "占用策略"
-    },
-    {
-      "id": "e6",
-      "fromNode": "occupy-route2",
-      "toNode": "occupy-strategy",
-      "fromSide": "right",
-      "toSide": "left",
-      "label": "占用策略"
-    },
-    {
-      "id": "e7",
-      "fromNode": "occupy-route1",
-      "toNode": "release-route1",
-      "fromSide": "bottom",
-      "toSide": "top"
-    },
-    {
-      "id": "e8",
-      "fromNode": "occupy-route2",
-      "toNode": "release-route2",
-      "fromSide": "bottom",
-      "toSide": "top"
-    },
-    {
-      "id": "e9",
-      "fromNode": "release-route2",
-      "toNode": "writeoff-stage1",
-      "fromSide": "bottom",
-      "toSide": "top",
-      "label": "月结后"
-    },
-    {
-      "id": "e10",
-      "fromNode": "writeoff-stage1",
-      "toNode": "writeoff-case1",
-      "fromSide": "bottom",
-      "toSide": "top"
-    },
-    {
-      "id": "e11",
-      "fromNode": "writeoff-stage1",
-      "toNode": "writeoff-case2",
-      "fromSide": "bottom",
-      "toSide": "top"
-    },
-    {
-      "id": "e12",
-      "fromNode": "writeoff-case1",
-      "toNode": "writeoff-stage2",
-      "fromSide": "bottom",
-      "toSide": "top",
-      "label": "可结算"
-    },
-    {
-      "id": "e13",
-      "fromNode": "writeoff-case2",
-      "toNode": "writeoff-stage2",
-      "fromSide": "bottom",
-      "toSide": "top",
-      "label": "可结算"
-    }
-  ]
+	"nodes":[
+		{"id":"title","type":"text","text":"# 预算管理详细流程\n\n涉及系统：BPC、EMS、CRM、米家\n涉及角色：国家财经、总部复核、总部渠道财经","x":0,"y":-300,"width":500,"height":150,"color":"6"},
+		{"id":"section1-title","type":"text","text":"## 1. 预算注入","x":0,"y":-100,"width":250,"height":70,"color":"1"},
+		{"id":"inject-flow","type":"text","text":"### 注入流程\n\n国家财经发起预算注入\n↓\n总部复核\n↓\n总部渠道财经在 BPC 编制预算\n↓\n同步到 EMS","x":0,"y":0,"width":250,"height":220},
+		{"id":"bpc-structure","type":"text","text":"### BPC 预算结构\n\n**维度：**\n科目（固定）→ 渠道（米家授权店）→ 国家 → 4大品类\n\n**编制规则：**\n一个科目 + 一个渠道 + 一个国家 + 一个品类 = 一条编制\n\n**4大品类：**\n（此品类会对应米家的业务类目）\n- 手机\n- 非手机-可穿戴充电\n- 非手机-电视 & 大家电\n- 非手机-生态链","x":300,"y":0,"width":380,"height":350,"color":"3"},
+		{"id":"ems-structure","type":"text","text":"### EMS 预算结构\n\n**大编制：**\nBPC 同步过来的一条编制\n\n**小编制：**\n- 由 CRM 占用和释放形成\n- 金额约束：小编制金额 ≤ 大编制金额\n- 代表米家本次可占用的预算总额\n- 一个大编制下可能有多个 CRM 占用的小编制\n\n**政策：**\n- 一个小编制下有多条政策\n- 一条政策对应米家的一个促销活动或激励政策的同品类预算\n- 注意：一个活动如果跨品类，会产生多条预算","x":730,"y":0,"width":400,"height":450,"color":"3"},
+		{"id":"section2-title","type":"text","text":"## 2. 预算占用","x":0,"y":500,"width":250,"height":70,"color":"2"},
+		{"id":"occupy-route1","type":"text","text":"### 链路1：米家授权店活动\n\n**触发场景：**\n米家授权店创建活动\n\n**占用逻辑：**\n- 一个活动跨多个品类时，会生成多条预算\n- 每条预算对应 EMS 中小编制下的一条政策\n- 占用小编制的预算","x":0,"y":600,"width":350,"height":280,"color":"4"},
+		{"id":"occupy-route2","type":"text","text":"### 链路2：米家返利激励政策\n\n**触发场景：**\n米家返利政策创建\n\n**占用逻辑：**\n- 一个返利政策只会产生一条预算（待确认）\n- 每条返利激励政策对应 EMS 中小编制下的一条政策\n- 占用小编制的预算","x":400,"y":600,"width":350,"height":280,"color":"4"},
+		{"id":"occupy-strategy","type":"text","text":"### 多个小编制占用策略\n\n由于大编制下存在多个 CRM 占用的小编制，需按以下规则选择小编制进行占用：\n\n**1. 优先选择金额较小的小编制**\n\n**2. 判断是否可占用：**\n\n❌ **不占用：** 池子金额 < 占用金额 × 120%\n- 跳过当前小编制，选择更大金额的小编制\n\n✅ **可占用：** 池子金额 ≥ 占用金额 × 120%\n- 占用当前小编制\n\n**规则说明：**\n20% 的缓冲空间确保小编制有足够余量应对后续追加占用（20%的数额待确认）","x":800,"y":500,"width":450,"height":480,"color":"5"},
+		{"id":"section3-title","type":"text","text":"## 3. 预算释放","x":0,"y":1040,"width":250,"height":70,"color":"5"},
+		{"id":"release-route1","type":"text","text":"### 链路1：米家授权店释放场景\n\n**范围说明：**\n本场景讨论促销池与预算网关之间的释放预算，不涉及促销池内部释放\n\n**触发场景：**\n- 活动：审批不通过、活动过期、发生退款\n- 券：券过期、审批不通过、活动过期、发生退款\n\n**释放流程：**\n1. 促销系统请求返利计算接口\n2. 确认是否可以释放预算\n3. 确认后才能释放并返回","x":0,"y":1140,"width":400,"height":380,"color":"4"},
+		{"id":"release-route2","type":"text","text":"### 链路2：米家返利激励政策月结\n\n（待确认）\n\n**触发场景：**\n月结后确定实际返利金额\n\n**释放逻辑：**\n剩余金额触发释放","x":450,"y":1140,"width":350,"height":280,"color":"4"},
+		{"id":"section4-title","type":"text","text":"## 4. 预算核销","x":0,"y":1580,"width":250,"height":70,"color":"1"},
+		{"id":"writeoff-stage1","type":"text","text":"### 阶段1：结算前校验\n\n月结计算完成后，米家返利对每个政策发起结算，请求预算网关校验是否可结算","x":0,"y":1680,"width":450,"height":150,"color":"3"},
+		{"id":"writeoff-case1","type":"text","text":"**情况1：消耗金额 < 结算金额（预算不足）**\n\n需要追加预占多出的金额：\n\n**小编制有足够金额可预占：**\n1. 先预占小编制中的预算\n2. 预占成功后 → 返回米家返利『可发起结算』\n3. 米家返利传给 CRM 月结账单\n\n**小编制无足够金额可预占：**\n1. 直接返回米家返利『不可发起结算』\n2. 米家返利需告知用户在 CRM 哪条政策里增加预算（此流程是线下流程）","x":0,"y":1870,"width":450,"height":380,"color":"4"},
+		{"id":"writeoff-case2","type":"text","text":"**情况2：消耗金额 ≥ 结算金额（预算有余）**\n\n1. 释放多余的金额（待确认）\n2. 返回米家返利『可发起结算』","x":500,"y":1870,"width":400,"height":200,"color":"4"},
+		{"id":"writeoff-stage2","type":"text","text":"### 阶段2：CRM 接收月结账单后\n\n执行以下操作：\n\n1. 发起对商家的真实返利\n2. 同时请求 EMS 核销接口核销预算","x":0,"y":2300,"width":450,"height":200,"color":"3"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"inject-flow","toNode":"bpc-structure","fromSide":"right","toSide":"left","label":"BPC编制"},
+		{"id":"e2","fromNode":"bpc-structure","toNode":"ems-structure","fromSide":"right","toSide":"left","label":"同步到EMS"},
+		{"id":"e3","fromNode":"ems-structure","toNode":"occupy-route1","fromSide":"bottom","toSide":"top","label":"小编制"},
+		{"id":"e4","fromNode":"ems-structure","toNode":"occupy-route2","fromSide":"bottom","toSide":"top","label":"小编制"},
+		{"id":"e5","fromNode":"occupy-route1","toNode":"occupy-strategy","fromSide":"right","toSide":"left","label":"占用策略"},
+		{"id":"e6","fromNode":"occupy-route2","toNode":"occupy-strategy","fromSide":"right","toSide":"left","label":"占用策略"},
+		{"id":"e7","fromNode":"occupy-route1","toNode":"release-route1","fromSide":"bottom","toSide":"top"},
+		{"id":"e8","fromNode":"occupy-route2","toNode":"release-route2","fromSide":"bottom","toSide":"top"},
+		{"id":"e9","fromNode":"release-route2","toNode":"writeoff-stage1","fromSide":"bottom","toSide":"top","label":"月结后"},
+		{"id":"e10","fromNode":"writeoff-stage1","toNode":"writeoff-case1","fromSide":"bottom","toSide":"top"},
+		{"id":"e11","fromNode":"writeoff-stage1","toNode":"writeoff-case2","fromSide":"bottom","toSide":"top"},
+		{"id":"e12","fromNode":"writeoff-case1","toNode":"writeoff-stage2","fromSide":"bottom","toSide":"top","label":"可结算"},
+		{"id":"e13","fromNode":"writeoff-case2","toNode":"writeoff-stage2","fromSide":"bottom","toSide":"top","label":"可结算"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
 }

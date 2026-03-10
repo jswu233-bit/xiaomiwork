@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "预算管理流程.canvas",
+                "file": "预算管理详细流程.canvas",
                 "viewState": {
-                  "x": 550,
-                  "y": 830,
-                  "zoom": -1.5202233027560503
+                  "x": 625,
+                  "y": 1100,
+                  "zoom": -1.230063434689377
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "预算管理流程"
+              "title": "预算管理详细流程"
             }
           }
         ]
@@ -209,11 +209,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4c56e4708c910da0",
+  "active": "263519a5153929ff",
   "lastOpenFiles": [
-    "预算管理详细流程.canvas.bak",
-    "预算管理详细流程.canvas",
     "预算管理流程.canvas",
+    "预算管理详细流程.canvas",
+    "预算管理详细流程.canvas.bak",
     "VB for prototype.md",
     "预算管理详细流程.canvas.tmp.34180.1773061076427",
     "预算管理详细流程.canvas.tmp.34180.1773061063677",
@@ -234,7 +234,6 @@
     "pic/img_v3_02to_413108bd-7d50-4607-81ee-686fb331edfg.jpg",
     "pic/img_v3_02sk_c236d9c4-53fd-4808-b36d-71098225869g.jpg",
     "xiaomi/record",
-    "pic",
     "未命名.canvas"
   ]
 }
