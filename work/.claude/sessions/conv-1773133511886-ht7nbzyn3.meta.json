@@ -1,0 +1,19 @@
+{
+  "id": "conv-1773133511886-ht7nbzyn3",
+  "title": "你好",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1773133511887,
+  "updatedAt": 1773133548187,
+  "lastResponseAt": 1773133548187,
+  "sessionId": "b49aa722-b8ab-486b-89e4-ded164c67618",
+  "sdkSessionId": "b49aa722-b8ab-486b-89e4-ded164c67618",
+  "usage": {
+    "model": "opus",
+    "inputTokens": 3,
+    "cacheCreationInputTokens": 19244,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 19247,
+    "percentage": 10
+  }
+}
