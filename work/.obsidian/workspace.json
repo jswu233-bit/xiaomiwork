@@ -11,17 +11,14 @@
             "id": "263519a5153929ff",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "预算管理详细流程.canvas",
-                "viewState": {
-                  "x": 625,
-                  "y": 1100,
-                  "zoom": -1.230063434689377
-                }
+                "file": "VB for prototype.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "预算管理详细流程"
+              "icon": "lucide-file",
+              "title": "VB for prototype"
             }
           }
         ]
@@ -209,10 +206,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4c56e4708c910da0",
+  "active": "263519a5153929ff",
   "lastOpenFiles": [
-    "预算管理流程.canvas",
     "预算管理详细流程.canvas",
+    "预算管理流程.canvas",
     "预算管理详细流程.canvas.bak",
     "VB for prototype.md",
     "预算管理详细流程.canvas.tmp.34180.1773061076427",
