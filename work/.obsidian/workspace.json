@@ -11,14 +11,17 @@
             "id": "263519a5153929ff",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "VB for prototype.md",
-                "mode": "source",
-                "source": false
+                "file": "预算管理详细流程.canvas",
+                "viewState": {
+                  "x": 625,
+                  "y": 1397.136929460581,
+                  "zoom": -1.6758252993523024
+                }
               },
-              "icon": "lucide-file",
-              "title": "VB for prototype"
+              "icon": "lucide-layout-dashboard",
+              "title": "预算管理详细流程"
             }
           }
         ]
@@ -176,13 +179,13 @@
             }
           },
           {
-            "id": "4c56e4708c910da0",
+            "id": "51de9e7825b93b90",
             "type": "leaf",
             "state": {
-              "type": "claudian-view",
+              "type": "git-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "claudian-view"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
@@ -205,12 +208,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "263519a5153929ff",
+  "active": "51de9e7825b93b90",
   "lastOpenFiles": [
-    "预算管理详细流程.canvas",
     "预算管理流程.canvas",
-    "预算管理详细流程.canvas.bak",
     "VB for prototype.md",
+    "预算管理详细流程.canvas",
+    "预算管理详细流程.canvas.bak",
     "预算管理详细流程.canvas.tmp.34180.1773061076427",
     "预算管理详细流程.canvas.tmp.34180.1773061063677",
     "预算管理详细流程.canvas.tmp.34180.1773061043836",
