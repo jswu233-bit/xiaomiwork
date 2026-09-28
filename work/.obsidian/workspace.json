@@ -11,10 +11,17 @@
             "id": "6396276fd841a502",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
+              "type": "canvas",
+              "state": {
+                "file": "预算管理详细流程.canvas",
+                "viewState": {
+                  "x": 625,
+                  "y": 1390.212765957447,
+                  "zoom": -1.6418083611258665
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "预算管理详细流程"
             }
           }
         ]
@@ -192,7 +199,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
@@ -212,13 +219,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "51de9e7825b93b90",
+  "active": "5292385a278a3f9a",
   "lastOpenFiles": [
-    "xiaomi/record/新零售门店状态.md",
-    "预算管理详细流程.canvas",
-    "预算管理流程.canvas",
     "欢迎.md",
+    "预算管理详细流程.canvas",
     "VB for prototype.md",
+    "预算管理流程.canvas",
+    "xiaomi/record/新零售门店状态.md",
     "xiaomi/record/门店损益表结构.md",
     "idea/memo.md",
     "idea/AI记录.md",
