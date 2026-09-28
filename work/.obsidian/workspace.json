@@ -4,24 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "b6dfc84918b82368",
+        "id": "bc2b9dbe253f956e",
         "type": "tabs",
         "children": [
           {
-            "id": "6396276fd841a502",
+            "id": "88580a8053a911e3",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "预算管理详细流程.canvas",
-                "viewState": {
-                  "x": 625,
-                  "y": 1390.212765957447,
-                  "zoom": -1.6418083611258665
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "预算管理详细流程"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
@@ -219,10 +212,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5292385a278a3f9a",
+  "active": "88580a8053a911e3",
   "lastOpenFiles": [
-    "欢迎.md",
+    "Clippings/‌⁤‌⁡‍⁣​‍​⁤⁣‍⁢​​⁢‬‌‬​⁣​‍‌⁤‍⁢⁣‌﻿⁤‍﻿‌‍⁡‍⁢‬⁣​⁤‬⁤⁡⁡⁣⁤‬‬IDN-NR-Policy KPI Calculation Rules for SC, ARM & DRM KPI计算细则 - 小米办公Pro云文档.md",
     "预算管理详细流程.canvas",
+    "Clippings",
+    "欢迎.md",
     "VB for prototype.md",
     "预算管理流程.canvas",
     "xiaomi/record/新零售门店状态.md",
@@ -245,7 +240,6 @@
     "预算管理流程.canvas.tmp.34180.1773053714024",
     "未命名",
     "pic/img_v3_02to_413108bd-7d50-4607-81ee-686fb331edfg.jpg",
-    "pic/img_v3_02sk_c236d9c4-53fd-4808-b36d-71098225869g.jpg",
-    "xiaomi/record"
+    "pic/img_v3_02sk_c236d9c4-53fd-4808-b36d-71098225869g.jpg"
   ]
 }
