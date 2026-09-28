@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "bc2b9dbe253f956e",
+        "id": "ae377d0f8a714061",
         "type": "tabs",
         "children": [
           {
-            "id": "88580a8053a911e3",
+            "id": "3975274eeeb2905f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "xiaomi/record/IDN-NR-Policy KPI Calculation Rules for SC, ARM & DRM KPI计算细则_复原版.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "IDN-NR-Policy KPI Calculation Rules for SC, ARM & DRM KPI计算细则_复原版"
+              "title": "新标签页"
             }
           }
         ]
@@ -41,7 +37,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -200,7 +198,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 598.5
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -216,22 +215,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "51de9e7825b93b90",
+  "active": "3975274eeeb2905f",
   "lastOpenFiles": [
     "xiaomi/record/IDN-NR-Policy KPI Calculation Rules for SC, ARM & DRM KPI计算细则_复原版.md",
+    "xiaomi/record/新零售门店状态.md",
+    "xiaomi/record/门店损益表结构.md",
+    "xiaomi/record/渠道零售.md",
+    "xiaomi/record/OC关于套装和赠品的结构.md",
     "Clippings/‌⁤‌⁡‍⁣​‍​⁤⁣‍⁢​​⁢‬‌‬​⁣​‍‌⁤‍⁢⁣‌﻿⁤‍﻿‌‍⁡‍⁢‬⁣​⁤‬⁤⁡⁡⁣⁤‬‬IDN-NR-Policy KPI Calculation Rules for SC, ARM & DRM KPI计算细则 - 小米办公Pro云文档.md",
     "预算管理详细流程.canvas",
     "Clippings",
     "欢迎.md",
     "VB for prototype.md",
     "预算管理流程.canvas",
-    "xiaomi/record/新零售门店状态.md",
-    "xiaomi/record/门店损益表结构.md",
     "idea/memo.md",
     "idea/AI记录.md",
     "idea/龙虾记录.md",
-    "xiaomi/record/渠道零售.md",
-    "xiaomi/record/OC关于套装和赠品的结构.md",
     "xiaomi/record/PAYID.md",
     "pic/img_v3_02ua_c3121d52-10a6-423a-9f5d-4c9e226d86eg.jpg",
     "未命名.canvas",
