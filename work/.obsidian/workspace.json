@@ -4,24 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "e6a40b831ace86ab",
+        "id": "b6dfc84918b82368",
         "type": "tabs",
         "children": [
           {
-            "id": "263519a5153929ff",
+            "id": "6396276fd841a502",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "预算管理详细流程.canvas",
-                "viewState": {
-                  "x": 625,
-                  "y": 743.4356846473025,
-                  "zoom": -1.6758252993523024
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "预算管理详细流程"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
@@ -187,13 +180,23 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "623069891e1194d9",
+            "type": "leaf",
+            "state": {
+              "type": "claudian-view",
+              "state": {},
+              "icon": "bot",
+              "title": "Claudian"
+            }
           }
         ],
         "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 491.5
+    "width": 561.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -211,9 +214,20 @@
   },
   "active": "51de9e7825b93b90",
   "lastOpenFiles": [
-    "预算管理流程.canvas",
-    "VB for prototype.md",
+    "xiaomi/record/新零售门店状态.md",
     "预算管理详细流程.canvas",
+    "预算管理流程.canvas",
+    "欢迎.md",
+    "VB for prototype.md",
+    "xiaomi/record/门店损益表结构.md",
+    "idea/memo.md",
+    "idea/AI记录.md",
+    "idea/龙虾记录.md",
+    "xiaomi/record/渠道零售.md",
+    "xiaomi/record/OC关于套装和赠品的结构.md",
+    "xiaomi/record/PAYID.md",
+    "pic/img_v3_02ua_c3121d52-10a6-423a-9f5d-4c9e226d86eg.jpg",
+    "未命名.canvas",
     "预算管理详细流程.canvas.bak",
     "预算管理详细流程.canvas.tmp.34180.1773061076427",
     "预算管理详细流程.canvas.tmp.34180.1773061063677",
@@ -222,18 +236,9 @@
     "预算管理流程.canvas.tmp.34180.1773053777385",
     "预算管理流程.canvas.tmp.34180.1773053758571",
     "预算管理流程.canvas.tmp.34180.1773053714024",
-    "idea/memo.md",
-    "idea/AI记录.md",
-    "idea/龙虾记录.md",
     "未命名",
-    "xiaomi/record/门店损益表结构.md",
-    "xiaomi/record/渠道零售.md",
-    "xiaomi/record/OC关于套装和赠品的结构.md",
-    "xiaomi/record/PAYID.md",
-    "欢迎.md",
     "pic/img_v3_02to_413108bd-7d50-4607-81ee-686fb331edfg.jpg",
     "pic/img_v3_02sk_c236d9c4-53fd-4808-b36d-71098225869g.jpg",
-    "xiaomi/record",
-    "未命名.canvas"
+    "xiaomi/record"
   ]
 }

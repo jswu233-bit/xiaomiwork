@@ -1,9 +1,9 @@
 {
   "id": "conv-1773133511886-ht7nbzyn3",
-  "title": "你好",
-  "titleGenerationStatus": "failed",
+  "title": "Respond to greeting",
+  "titleGenerationStatus": "success",
   "createdAt": 1773133511887,
-  "updatedAt": 1773133548187,
+  "updatedAt": 1790581355471,
   "lastResponseAt": 1773133548187,
   "sessionId": "b49aa722-b8ab-486b-89e4-ded164c67618",
   "sdkSessionId": "b49aa722-b8ab-486b-89e4-ded164c67618",
