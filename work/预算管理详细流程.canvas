@@ -15,23 +15,23 @@
 		{"id":"section4-title","type":"text","text":"## 4. 预算核销","x":0,"y":1580,"width":250,"height":70,"color":"1"},
 		{"id":"writeoff-stage1","type":"text","text":"### 阶段1：结算前校验\n\n月结计算完成后，米家返利对每个政策发起结算，请求预算网关校验是否可结算","x":0,"y":1680,"width":450,"height":150,"color":"3"},
 		{"id":"writeoff-case1","type":"text","text":"**情况1：消耗金额 < 结算金额（预算不足）**\n\n需要追加预占多出的金额：\n\n**小编制有足够金额可预占：**\n1. 先预占小编制中的预算\n2. 预占成功后 → 返回米家返利『可发起结算』\n3. 米家返利传给 CRM 月结账单\n\n**小编制无足够金额可预占：**\n1. 直接返回米家返利『不可发起结算』\n2. 米家返利需告知用户在 CRM 哪条政策里增加预算（此流程是线下流程）","x":0,"y":1870,"width":450,"height":380,"color":"4"},
-		{"id":"writeoff-case2","type":"text","text":"**情况2：消耗金额 ≥ 结算金额（预算有余）**\n\n1. 释放多余的金额（待确认）\n2. 返回米家返利『可发起结算』","x":500,"y":1870,"width":400,"height":200,"color":"4"},
-		{"id":"writeoff-stage2","type":"text","text":"### 阶段2：CRM 接收月结账单后\n\n执行以下操作：\n\n1. 发起对商家的真实返利\n2. 同时请求 EMS 核销接口核销预算","x":0,"y":2300,"width":450,"height":200,"color":"3"}
+		{"id":"writeoff-stage2","type":"text","text":"### 阶段2：CRM 接收月结账单后\n\n执行以下操作：\n\n1. 发起对商家的真实返利\n2. 同时请求 EMS 核销接口核销预算","x":0,"y":2300,"width":450,"height":200,"color":"3"},
+		{"id":"writeoff-case2","type":"text","text":"**情况2：消耗金额 ≥ 结算金额（预算有余）**\n\n1. 释放多余的金额（待确认）\n2. 返回米家返利『可发起结算』","x":850,"y":1860,"width":400,"height":200,"color":"4"}
 	],
 	"edges":[
-		{"id":"e1","fromNode":"inject-flow","toNode":"bpc-structure","fromSide":"right","toSide":"left","label":"BPC编制"},
-		{"id":"e2","fromNode":"bpc-structure","toNode":"ems-structure","fromSide":"right","toSide":"left","label":"同步到EMS"},
-		{"id":"e3","fromNode":"ems-structure","toNode":"occupy-route1","fromSide":"bottom","toSide":"top","label":"小编制"},
-		{"id":"e4","fromNode":"ems-structure","toNode":"occupy-route2","fromSide":"bottom","toSide":"top","label":"小编制"},
-		{"id":"e5","fromNode":"occupy-route1","toNode":"occupy-strategy","fromSide":"right","toSide":"left","label":"占用策略"},
-		{"id":"e6","fromNode":"occupy-route2","toNode":"occupy-strategy","fromSide":"right","toSide":"left","label":"占用策略"},
-		{"id":"e7","fromNode":"occupy-route1","toNode":"release-route1","fromSide":"bottom","toSide":"top"},
-		{"id":"e8","fromNode":"occupy-route2","toNode":"release-route2","fromSide":"bottom","toSide":"top"},
-		{"id":"e9","fromNode":"release-route2","toNode":"writeoff-stage1","fromSide":"bottom","toSide":"top","label":"月结后"},
-		{"id":"e10","fromNode":"writeoff-stage1","toNode":"writeoff-case1","fromSide":"bottom","toSide":"top"},
-		{"id":"e11","fromNode":"writeoff-stage1","toNode":"writeoff-case2","fromSide":"bottom","toSide":"top"},
-		{"id":"e12","fromNode":"writeoff-case1","toNode":"writeoff-stage2","fromSide":"bottom","toSide":"top","label":"可结算"},
-		{"id":"e13","fromNode":"writeoff-case2","toNode":"writeoff-stage2","fromSide":"bottom","toSide":"top","label":"可结算"}
+		{"id":"e1","fromNode":"inject-flow","fromSide":"right","toNode":"bpc-structure","toSide":"left","label":"BPC编制"},
+		{"id":"e2","fromNode":"bpc-structure","fromSide":"right","toNode":"ems-structure","toSide":"left","label":"同步到EMS"},
+		{"id":"e3","fromNode":"ems-structure","fromSide":"bottom","toNode":"occupy-route1","toSide":"top","label":"小编制"},
+		{"id":"e4","fromNode":"ems-structure","fromSide":"bottom","toNode":"occupy-route2","toSide":"top","label":"小编制"},
+		{"id":"e5","fromNode":"occupy-route1","fromSide":"right","toNode":"occupy-strategy","toSide":"left","label":"占用策略"},
+		{"id":"e6","fromNode":"occupy-route2","fromSide":"right","toNode":"occupy-strategy","toSide":"left","label":"占用策略"},
+		{"id":"e7","fromNode":"occupy-route1","fromSide":"bottom","toNode":"release-route1","toSide":"top"},
+		{"id":"e8","fromNode":"occupy-route2","fromSide":"bottom","toNode":"release-route2","toSide":"top"},
+		{"id":"e9","fromNode":"release-route2","fromSide":"bottom","toNode":"writeoff-stage1","toSide":"top","label":"月结后"},
+		{"id":"e10","fromNode":"writeoff-stage1","fromSide":"bottom","toNode":"writeoff-case1","toSide":"top"},
+		{"id":"e11","fromNode":"writeoff-stage1","fromSide":"bottom","toNode":"writeoff-case2","toSide":"top"},
+		{"id":"e12","fromNode":"writeoff-case1","fromSide":"bottom","toNode":"writeoff-stage2","toSide":"top","label":"可结算"},
+		{"id":"e13","fromNode":"writeoff-case2","fromSide":"bottom","toNode":"writeoff-stage2","toSide":"top","label":"可结算"}
 	],
 	"metadata":{
 		"version":"1.0-1.0",
