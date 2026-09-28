@@ -11,10 +11,14 @@
             "id": "88580a8053a911e3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "xiaomi/record/IDN-NR-Policy KPI Calculation Rules for SC, ARM & DRM KPI计算细则_复原版.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "IDN-NR-Policy KPI Calculation Rules for SC, ARM & DRM KPI计算细则_复原版"
             }
           }
         ]
@@ -192,11 +196,11 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 561.5
+    "width": 598.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -212,8 +216,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "88580a8053a911e3",
+  "active": "51de9e7825b93b90",
   "lastOpenFiles": [
+    "xiaomi/record/IDN-NR-Policy KPI Calculation Rules for SC, ARM & DRM KPI计算细则_复原版.md",
     "Clippings/‌⁤‌⁡‍⁣​‍​⁤⁣‍⁢​​⁢‬‌‬​⁣​‍‌⁤‍⁢⁣‌﻿⁤‍﻿‌‍⁡‍⁢‬⁣​⁤‬⁤⁡⁡⁣⁤‬‬IDN-NR-Policy KPI Calculation Rules for SC, ARM & DRM KPI计算细则 - 小米办公Pro云文档.md",
     "预算管理详细流程.canvas",
     "Clippings",
