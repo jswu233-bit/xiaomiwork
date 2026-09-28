@@ -11,10 +11,14 @@
             "id": "3975274eeeb2905f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "xiaomi/record/IDN-NR-Policy KPI Calculation Rules for SC, ARM & DRM KPI计算细则_复原版.md",
+                "mode": "preview",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "IDN-NR-Policy KPI Calculation Rules for SC, ARM & DRM KPI计算细则_复原版"
             }
           }
         ]
@@ -198,8 +202,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
